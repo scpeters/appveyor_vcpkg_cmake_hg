@@ -14,5 +14,5 @@ find_package(ignition-cmake0 REQUIRED)
 #============================================================================
 # Set up the project
 #============================================================================
-ign_configure_project(math 4.0.0)
+project(ignition-math4 VERSION 4.0.0)
 
