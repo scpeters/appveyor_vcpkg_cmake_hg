@@ -24,4 +24,10 @@ build_script:
   - cd build
   - cmake ..
     -DCMAKE_CXX_FLAGS="-WX"
- 
+  # this will fail
+  - cd ..
+  - md build_
+  - cd build_
+  - cmake ..
+    -DCMAKE_CXX_FLAGS="-WX"
+    -DCMAKE_TOOLCHAIN_FILE=c:/tools/vcpkg/scripts/buildsystems/vcpkg.cmake
